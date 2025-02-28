@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishSavvy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DishSavvy</h1>
+        <p id="location">Detecting your location...</p>
+
+        <div class="filters">
+            <select id="distance">
+                <option value="5">5 km</option>
+                <option value="10">10 km</option>
+                <option value="20">20 km</option>
+            </select>
+            <select id="rating">
+                <option value="3">3+ Stars</option>
+                <option value="4">4+ Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+            <select id="dietary">
+                <option value="veg">Veg</option>
+                <option value="non-veg">Non-Veg</option>
+            </select>
+            <select id="cuisine">
+                <option value="indian">Indian</option>
+                <option value="south-indian">South Indian</option>
+                <option value="chinese">Chinese</option>
+            </select>
+            <button onclick="fetchRecommendations()">Find Dishes</button>
+        </div>
+
+        <div id="recommendations" class="recommendations"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
