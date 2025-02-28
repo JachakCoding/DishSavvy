@@ -18,7 +18,7 @@ function getLocation() {
 
 // Convert coordinates to city name using Geocoding API
 async function getCityName(lat, lon) {
-    const apiKey = "AIzaSyDdz1CqNl49txkPaDcYXM8Yn9EvXksKVss"; // Replace with your API key
+    const apiKey = "API_KEY_GOES_HERE"; // Replace with your API key
     const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&key=${apiKey}`;
     try {
         const response = await fetch(url);
